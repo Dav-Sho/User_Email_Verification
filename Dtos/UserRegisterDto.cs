@@ -12,7 +12,7 @@ namespace User_Email_Verification.Dtos
         public string Username { get; set; } = string.Empty;
 
         [EmailAddress]
-        [Required(ErrorMessage = "Please use a valid email")]
+        [Required(ErrorMessage = "Email is required")]
         public string Email { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Password is required")]

@@ -8,8 +8,8 @@ namespace User_Email_Verification.Service
 {
     public interface AuthService
     {
-      Task<ServiceResponse<int>> Register(User user);
+      Task<ServiceResponse<string>> Register(User user, string password);
       Task<ServiceResponse<string>> Login(string email, string password);
-      Task<bool> UserExist(User user);
+      Task<bool> UserExist(string email);
     }
 }
